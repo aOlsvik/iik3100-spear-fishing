@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
-  const filePath = path.join(process.cwd(), 'resources', 'spear.json');
+  const filePath = '/spear.json';
 
   if (req.method === 'POST') {
     console.log(req.body);
@@ -14,6 +14,7 @@ export default function handler(req, res) {
         console.error(err);
         return res.status(500).json({ error: 'Failed to read file' });
       }
+      console.log(req.body);
 
       // Parse existing data or initialize to an empty array if file is empty
       let existingData = [];

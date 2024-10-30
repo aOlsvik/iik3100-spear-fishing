@@ -6,7 +6,7 @@ async function submitForm(e) {
   const username = document.getElementById('brukernavn').value;
   const password = document.getElementById('passord').value;
 
-  const response = await fetch('http://localhost:3000/api/login', {
+  const response = await fetch('/api/login', {
     method: 'POST',
     body: JSON.stringify({ username, password }),
     headers: {

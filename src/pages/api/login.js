@@ -3,7 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 export default function handler(req, res) {
-  const filePath = path.join(process.cwd(), 'spear.json');
+  const filePath = path.join(process.cwd(), 'resources', 'spear.json');
 
   if (req.method === 'POST') {
     console.log(req.body);

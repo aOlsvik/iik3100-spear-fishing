@@ -125,3 +125,71 @@ form input {
   color: #9EC0FF;
   cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+  .links {
+    width: 50%;
+  }
+
+  .logo img {
+    width: 100px;
+  }
+
+  .icons {
+    width: 100px;
+  }
+
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .links {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .icons {
+    width: 70px;
+  }
+
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .nav {
+    flex-direction: flex;
+    justify-content: space-around;
+    padding: 10px 10px;
+  }
+
+  .links {
+    width: fit-content;
+    font-size: 10px;
+  }
+
+  .logo {
+    display:none;
+  }
+
+  .icons {
+    width: 50px;
+  }
+
+  .icons img {
+    width: 20px;
+    height: 20px;
+  }
+  
+}
